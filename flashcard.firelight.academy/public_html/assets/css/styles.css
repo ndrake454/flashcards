@@ -1,0 +1,395 @@
+/* Enhanced styles for AI Flashcards */
+
+:root {
+    /* Define color palette variables */
+    --primary-color: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary-color: #3f37c9;
+    --accent-color: #4cc9f0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --success-color: #4CAF50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --info-color: #03a9f4;
+    
+    /* Fonts */
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Nunito', sans-serif;
+    
+    /* Spacing */
+    --section-spacing: 5rem;
+    --card-spacing: 1.5rem;
+    
+    /* Border radius */
+    --border-radius-sm: 0.25rem;
+    --border-radius: 0.5rem;
+    --border-radius-lg: 1rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+    
+    /* Transitions */
+    --transition-fast: 0.2s;
+    --transition: 0.3s;
+    --transition-slow: 0.5s;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--body-font);
+    color: var(--dark-color);
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-fast) ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Container */
+.container {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all var(--transition-fast);
+    border-radius: var(--border-radius);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.25rem;
+}
+
+/* Button Styling */
+.btn {
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.btn-success:hover {
+    background-color: #43a047;
+    border-color: #43a047;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Controls */
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #DEE2E6;
+    transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.15);
+}
+
+/* Flashcard Styling */
+#flashcardContainer {
+    border: none;
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition);
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    position: relative;
+}
+
+#questionText {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--dark-color);
+    min-height: 100px;
+    margin-bottom: 1.5rem;
+}
+
+/* Response Textarea */
+#userResponse {
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    resize: vertical;
+    min-height: 150px;
+    padding: 1rem;
+    font-family: var(--body-font);
+    transition: all var(--transition-fast);
+}
+
+#userResponse:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.15);
+}
+
+/* Feedback Container */
+#feedbackContainer {
+    margin-top: 2rem;
+}
+
+#feedbackContainer .card-header {
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+}
+
+#feedbackContainer .bg-success {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32) !important;
+    color: white;
+}
+
+#feedbackContainer .bg-warning {
+    background: linear-gradient(135deg, #FFB74D, #FF9800) !important;
+}
+
+/* Home Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+    border-radius: 0 0 50% 50% / 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Features Section */
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    transition: all var(--transition);
+    border-radius: var(--border-radius);
+    background-color: white;
+    box-shadow: var(--shadow);
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Category Cards */
+.category-card {
+    height: 100%;
+    transition: transform var(--transition);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card .btn {
+    margin-top: auto;
+}
+
+/* Badges */
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+/* Progress Bar */
+.progress {
+    height: 0.75rem;
+    border-radius: 30px;
+    background-color: #e9ecef;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    border-radius: 30px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: var(--accent-color);
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 3rem 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 1.25rem;
+    }
+    
+    #questionText {
+        font-size: 1.1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-section h1 {
+        font-size: 2.25rem;
+    }
+}
+
+/* Animations */
+.animate-fade-in {
+    animation: fadeIn var(--transition) ease forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp var(--transition) ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Theme Styles will be in themes.css */
