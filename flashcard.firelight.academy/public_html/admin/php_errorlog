@@ -1,0 +1,29 @@
+[27-Mar-2025 02:06:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`dbnrtg5xciiuqb`.`user_progress`, CONSTRAINT `user_progress_ibfk_2` FOREIGN KEY (`card_id`) REFERENCES `flashcards` (`card_id`)) in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php:63
+Stack trace:
+#0 /home/customer/www/flashcard.firelight.academy/public_html/config/db.php(63): PDOStatement->execute()
+#1 /home/customer/www/flashcard.firelight.academy/public_html/admin/cards.php(97): Database->execute()
+#2 {main}
+  thrown in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php on line 63
+[27-Mar-2025 02:06:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`dbnrtg5xciiuqb`.`user_progress`, CONSTRAINT `user_progress_ibfk_2` FOREIGN KEY (`card_id`) REFERENCES `flashcards` (`card_id`)) in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php:63
+Stack trace:
+#0 /home/customer/www/flashcard.firelight.academy/public_html/config/db.php(63): PDOStatement->execute()
+#1 /home/customer/www/flashcard.firelight.academy/public_html/admin/cards.php(97): Database->execute()
+#2 {main}
+  thrown in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php on line 63
+[27-Mar-2025 02:06:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`dbnrtg5xciiuqb`.`user_progress`, CONSTRAINT `user_progress_ibfk_2` FOREIGN KEY (`card_id`) REFERENCES `flashcards` (`card_id`)) in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php:63
+Stack trace:
+#0 /home/customer/www/flashcard.firelight.academy/public_html/config/db.php(63): PDOStatement->execute()
+#1 /home/customer/www/flashcard.firelight.academy/public_html/admin/cards.php(97): Database->execute()
+#2 {main}
+  thrown in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php on line 63
+[27-Mar-2025 02:11:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config/db.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php:2
+Stack trace:
+#0 /home/customer/www/flashcard.firelight.academy/public_html/admin/index.php(9): require_once()
+#1 {main}
+  thrown in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php on line 2
+[27-Mar-2025 02:13:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`dbnrtg5xciiuqb`.`user_progress`, CONSTRAINT `user_progress_ibfk_2` FOREIGN KEY (`card_id`) REFERENCES `flashcards` (`card_id`)) in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php:63
+Stack trace:
+#0 /home/customer/www/flashcard.firelight.academy/public_html/config/db.php(63): PDOStatement->execute()
+#1 /home/customer/www/flashcard.firelight.academy/public_html/admin/cards.php(97): Database->execute()
+#2 {main}
+  thrown in /home/customer/www/flashcard.firelight.academy/public_html/config/db.php on line 63

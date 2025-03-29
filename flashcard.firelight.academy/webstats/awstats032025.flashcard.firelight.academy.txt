@@ -1,0 +1,327 @@
+AWSTATS DATA FILE 7.7 (build 20161204)
+# If you remove this file, all statistics for date 202503 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.flashcard.firelight.academy.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2685                
+POS_VISITOR 7332                
+POS_DAY 8672                
+POS_DOMAIN 3332                
+POS_LOGIN 3646                
+POS_ROBOT 3801                
+POS_WORMS 3974                
+POS_EMAILSENDER 4105                
+POS_EMAILRECEIVER 4248                
+POS_SESSION 8803                
+POS_SIDER 8987                
+POS_FILETYPES 4383                
+POS_DOWNLOADS 4541                
+POS_OS 4589                
+POS_BROWSER 4740                
+POS_SCREENSIZE 5155                
+POS_UNKNOWNREFERER 5229                
+POS_UNKNOWNREFERERBROWSER 5520                
+POS_ORIGIN 5602                
+POS_SEREFERRALS 5738                
+POS_PAGEREFS 5882                
+POS_SEARCHWORDS 6030                
+POS_KEYWORDS 6182                
+POS_MISC 2349                
+POS_ERRORS 6241                
+POS_CLUSTER 3502                
+POS_SIDER_404 6378                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20250329041902 1977 588472 0
+FirstTime 20250327013442
+LastTime 20250329041902
+LastUpdate 20250329043922 1977 1736 237 0 4
+TotalVisits 37                  
+TotalUnique 32                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 32                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 2655 0 2 0
+1 141 150 217906 22 38 147433
+2 288 311 554141 26 348 4989538
+3 147 195 414470 3 218 3719242
+4 34 39 41936 2 45 595383
+5 6 6 15417 0 0 0
+6 4 6 13807 1 10 42399
+7 1 1 2655 1 5 24
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 2 5 9806 0 5 70573
+11 0 0 0 0 0 0
+12 0 0 0 0 0 0
+13 83 90 171490 15 145 1016588
+14 7 19 37461 6 30 310608
+15 12 17 26749 0 26 352800
+16 26 27 29675 0 57 691488
+17 38 39 71384 5 119 1369162
+18 2 2 5310 1 5 24
+19 0 0 0 0 0 0
+20 1 1 2117 0 0 0
+21 0 0 0 0 0 0
+22 1 1 2655 0 2 0
+23 0 0 0 1 8 150752
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+us 778 891 1583344
+nz 4 4 10620
+gb 3 3 7965
+de 3 6 11923
+sg 2 2 236
+se 2 2 236
+ca 1 1 2655
+tr 1 1 2655
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+archive\.org_bot 3 7965 20250328041450 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+css 56 118012 0 0
+php 626 907713 0 0
+Unknown 10 1180 0 0
+html 158 366951 0 0
+js 60 225778 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 6
+ios_iphone 4 2
+win10 750 658
+linuxandroid 71 62
+linux 56 49
+macosx 15 9
+Unknown 14 14
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 19
+chrome63.0.3239.111 7 3
+chrome106.0.0.0 1 1
+firefox136.0 742 657
+chrome120.0.6099.72 1 0
+chrome110.0.0.0 1 1
+safari17.1 1 1
+chrome134.0.0.0 72 63
+chrome133.0.0.0 39 34
+chrome123.0.0.0 1 1
+chrome117.0.0.0 1 1
+safari15.4 4 2
+safari17.6.11 1 1
+chrome113.0.0.0 10 4
+chrome114.0.0.0 6 4
+firefox120.0 2 2
+chrome120.0.0.0 4 2
+chrome129.0.0.0 1 1
+edge18 2 2
+mozilla 14 14
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20250327013755
+Mozilla/5.0_(compatible;_InternetMeasurement/1.0;__https://internet-measurement.com/) 20250328173504
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 96 99
+From1 0 0
+From2 0 0
+From3 0 0
+From4 698 811
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+301 31 1623
+500 16 80
+404 778 13356282
+503 3 89984
+302 23 80
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 9
+/service-worker.js 62 -
+/assets/js/themes.js 233 -
+/assets/js/accessibility.js 262 -
+/assets/css/themes.css 188 https://flashcard.firelight.academy/categories.php
+/https%3A/fonts.googleapis.com/css2%3Ffamily%3DNunito%3Awght%40300%3B400%3B600%3B700%26family%3DPoppins%3Awght%40400%3B500%3B600%3B700%26display%3Dswap 1 -
+/register.php 7 https://flashcard.firelight.academy/
+/assets/js/speech-features.js 20 http://flashcard.firelight.academy/study.php
+/admin/stats.php 4 http://flashcard.firelight.academy/admin/cards.php
+/https%3A/fonts.googleapis.com/https%3A/fonts.googleapis.com/css%3Ffamily%3DOpen%2BSans%3A400%2C700%7CRoboto%3A400%2C700 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 32
+216.147.122.78 560 639 1175016 20250327032607
+168.200.6.5 117 125 232254 20250327171749
+216.147.126.192 65 72 79811 20250329041902 20250329041245 /api/cards.php
+172.59.225.199 12 17 26749 20250327153609
+157.119.40.14 4 4 10620 20250327182606
+138.201.135.169 3 6 11923 20250328100124
+35.90.171.130 3 3 7980 20250327054207
+44.244.202.68 2 6 11602 20250327144152
+44.247.89.116 2 2 5310 20250329003110
+52.41.249.217 2 6 11602 20250327142001
+35.86.167.215 1 1 118 20250327013753
+16.16.167.78 1 1 118 20250327013753
+87.236.176.201 1 1 2655 20250328143438
+54.169.176.124 1 1 118 20250327013753
+205.169.39.47 1 1 2655 20250327134149
+44.242.250.164 1 1 2117 20250328054620
+35.88.41.145 1 3 5837 20250328062018
+87.236.176.199 1 1 2655 20250328173504
+23.178.112.211 1 1 118 20250327013752
+23.178.112.212 1 1 118 20250327013755
+154.28.229.94 1 1 2121 20250327024518
+185.247.137.150 1 1 2655 20250328061945
+87.236.176.64 1 1 2655 20250328070543
+54.213.224.129 2 2 5320 20250327054207
+18.191.230.39 1 1 118 20250327013755
+18.139.208.184 1 1 118 20250327013755
+35.91.32.56 2 6 11602 20250327144055
+16.16.121.55 1 1 118 20250327013755
+149.57.180.68 1 1 2660 20250327060829
+35.93.228.40 1 1 118 20250327013755
+3.139.86.82 1 1 118 20250327013752
+149.57.180.198 1 1 2655 20250328061723
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 3
+20250327 718 822 1503478 24
+20250328 36 42 63365 10
+20250329 40 46 52791 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+30mn-1h 2
+0s-30s 30
+1h+ 1
+2mn-5mn 1
+5mn-15mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 15
+/study.php 161 350033 0 1
+/api/cards.php 151 52960 0 1
+/ 123 269880 27 20
+/admin/cards.php 78 168662 0 0
+/api/progress.php 62 13425 0 2
+/login.php 61 87169 0 0
+/categories.php 57 86448 0 2
+/admin/ 35 97071 0 0
+/admin/index.php 24 65606 0 0
+/profile.php 16 42869 0 0
+/register.php 4 4395 0 0
+/index.php 10 25253 0 0
+/.well-known/acme-challenge/XjVDyVaCZQBcbPfI-ygHrz4iyL-hBAtPDJzyiAoCXFM 5 590 5 5
+/.well-known/acme-challenge/a98vUjX2hVNQmqZdXQ71e64RjGwv0xlyZLqCKyKmaUg 5 590 5 5
+/admin/stats.php 2 10893 0 0
+END_SIDER
