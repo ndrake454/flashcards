@@ -1,0 +1,9 @@
+[29-Mar-2025 21:30:59 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/flashcard.firelight.academy/public_html/profile.php on line 321
+[29-Mar-2025 21:31:02 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/flashcard.firelight.academy/public_html/profile.php on line 321
+[29-Mar-2025 22:16:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isLoggedIn() in /home/customer/www/flashcard.firelight.academy/public_html/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/flashcard.firelight.academy/public_html/index.php on line 3
+[02-Apr-2025 20:56:35 UTC] PHP Fatal error:  Cannot redeclare varyQuestionText() (previously declared in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php:283) in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php on line 356
+[02-Apr-2025 20:56:40 UTC] PHP Fatal error:  Cannot redeclare varyQuestionText() (previously declared in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php:283) in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php on line 356
+[02-Apr-2025 20:56:42 UTC] PHP Fatal error:  Cannot redeclare varyQuestionText() (previously declared in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php:283) in /home/customer/www/flashcard.firelight.academy/public_html/includes/functions.php on line 356
